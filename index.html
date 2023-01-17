@@ -1,13 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
-    Hello World! We are software developers.
+    <div class="container">
+      <header class="title">
+        <h1>Survey Form</h1>
+        <p id="description">Microverse survey form</p>
+      </header>
+      <form method="get"  id="survey-form">
+        <div class="form-group">
+          <label for="name" id="name-label">Name</label>
+          <input type="text" id="name" placeholder="Enter your name" />
+        </div>
+        <div class="form-group">
+          <label for="email" id="email-label">Email</label>
+          <input type="email" id="email" placeholder="Enter your email" />
+        </div>
+        <div class="form-group">
+          <label for="number" id="number-label">Number</label>
+          <input
+            type="number"
+            id="number"
+            placeholder="Enter your number"
+            min=""
+            max="" />
+        </div>
+        <div class="form-group">
+          <label for="gender">Gender</label>
+          <select id="dropdown">
+            <option value="Male" name="gender">Male</option>
+            <option value="Female" name="gender">Female</option>
+            <option value="Other" name="gender">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="language">Languages spoken:</label>
+          <div>
+            <label for="english">English</label>
+            <input type="checkbox" value="English" />
+          </div>
+          <div>
+            <label for="french">French</label>
+            <input type="checkbox" value="French" />
+          </div>
+          <div>
+            <label for="swahili">Swahili</label>
+            <input type="checkbox" value="swahili" />
+          </div>
+          <div>
+            <label for="yoruba">Yoruba</label>
+            <input type="checkbox" value="yoruba" />
+          </div>
+        </div>
+        <div class="form-group">
+          <textarea rows="3" placeholder="Additional Comments"></textarea>
+        </div>
+        <button id="submit">Submit</button>
+      </form>
+    </div>
+
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
     <!--
@@ -22,6 +78,6 @@
     - The freeCodeCamp Team
 
     -->
-    <script  src="js/index.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
